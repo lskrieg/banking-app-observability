@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Banking App Demo</title>
+  <script>
+  !function(b,e,t,r){
+    b[t]=b[t]||function(...args){(b[t].q=b[t].q||[]).push(args)};
+    b[t].l=+new Date;
+    var s=e.createElement('script'); s.async=1; s.crossOrigin='anonymous';
+    s.src='https://betterstack.net/b.js?t='+r;
+    (e.head||e.getElementsByTagName('head')[0]).appendChild(s);
+  }(window,document,'betterstack','khH8bwYn2hyaFjg3ttKRMgcb');
+  betterstack('init', { environment: 'production' });
+</script>
+
+</head>
+<body>
+  <h1>Banking App</h1>
+  <button onclick="fetch('/health').then(r=>r.json()).then(console.log)">Health Check</button>
+  <button onclick="fetch('/accounts').then(r=>r.json()).then(console.log)">View Accounts</button>
+  <button onclick="fetch('/loan/apply').then(r=>r.json()).then(console.log)">Apply for Loan</button>
+  <button onclick="fetch('/crash').then(r=>r.json()).then(console.log)">Simulate Error</button>
+</body>
+</html>

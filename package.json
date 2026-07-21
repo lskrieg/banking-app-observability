@@ -1,0 +1,27 @@
+{
+  "name": "banking-app-observability",
+  "version": "1.0.0",
+  "description": "A full-stack observability demo using a mock banking application as the data source. Built to demonstrate end-to-end monitoring across frontend UX, backend performance, and load test visibility using Dynatrace and OpenTelemetry.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lskrieg/banking-app-observability.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lskrieg/banking-app-observability/issues"
+  },
+  "homepage": "https://github.com/lskrieg/banking-app-observability#readme",
+  "dependencies": {
+    "@logtail/node": "^0.5.8",
+    "@logtail/winston": "^0.5.8",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "winston": "^3.19.0"
+  }
+}
